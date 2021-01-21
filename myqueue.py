@@ -32,5 +32,5 @@ class MyQueue:
     def get_last_number(self) -> int:
         return self._last_number
 
-    def __len__(self):
+    def __len__(self) -> int:
         return len(self._queue)
