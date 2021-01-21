@@ -14,6 +14,7 @@ if __name__ == '__main__':
             sleep(2)
         except UnknownOperation:
             print(Prompts.incorrect_input_prompt())
+            sleep(2)
         except ServiceModeException:
             category = input(Prompts.select_queue_for_service_prompt())
             try:
@@ -22,3 +23,4 @@ if __name__ == '__main__':
                 sleep(10)
             except AllQueuesAreEmpty:
                 print(Prompts.all_queues_empty_prompt())
+                sleep(2)
